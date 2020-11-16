@@ -1,0 +1,13 @@
+{
+  "name": "buycoinschallenge",
+  "version": "1.0.0",
+  "description": "github repos recreation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+
+  },
+  "author": "Ifeoha Stanley",
+  "license": "ISC"
+}
