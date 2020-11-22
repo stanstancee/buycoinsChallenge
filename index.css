@@ -477,6 +477,7 @@ button.m-btn span {
     margin-bottom: 0;
     font-size: 13px;
   }
+
   a.smile {
     margin-top: 50px;
     padding: 5px;
@@ -501,4 +502,21 @@ button.m-btn span {
     font-size: 13px;
     padding: 5px;
   }
+}
+@media screen and (max-width:500px){
+  #menu a {
+    padding: 2px;
+    font-size:85%;
+  }
+  main .top h1{
+    padding-left: 100px;
+  }
+  span.btn-text {
+    text-align: left;
+    font-size: 10px;
+}
+.section .all, .section .big-all {
+  display: inline;
+  margin: 0;
+}
 }
