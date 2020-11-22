@@ -1,0 +1,504 @@
+html,
+body {
+  overflow-x: hidden;
+}
+#toggle {
+  display: none;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+.num {
+  font-weight: 600;
+  color: #24292e;
+}
+svg {
+  vertical-align: middle;
+}
+#img {
+  height: 15x;
+  width: 15px;
+  border-radius: 15px;
+}
+#img2 {
+  height: 30x;
+  width: 30px;
+  border-radius: 30px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+.col-1 {
+  width: 33.3%;
+}
+.col-2 {
+  width: 30%;
+}
+.col-3 {
+  width: 70%;
+}
+.col-4 {
+  width: 85%;
+}
+.col-5 {
+  width: 15%;
+}
+.col-6 {
+  width: 40%;
+}
+header {
+  background-color: #24292e;
+  font-size: 14px;
+}
+header .form {
+  border: 1px solid #6a737d;
+  border-radius: 8px ;
+  padding: 0;
+  margin: 0;
+}
+header .head-icon,
+header .form {
+  display: inline-flex;
+  padding: 5px;
+}
+header svg {
+  fill: #fff;
+}
+header input {
+  background-color: #24292e;
+  color: #fcfcfc;
+  border-bottom: 1px solid #6a737d;
+  border: 0;
+  width: 220px;
+}
+header .form img {
+  vertical-align: middle ;
+  float: right;
+  margin-left: auto;
+}
+header input::placeholder {
+  color: #b3b2b2;
+}
+header svg:hover,
+header a:hover {
+  color: #6a737d;
+  fill: #6a737d;
+}
+header a {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 7px;
+  font-weight: 600;
+  text-align: left;
+}
+header .col-5 {
+  padding: 0;
+  margin: auto;
+}
+header .col-5 div {
+  display: inline-flex;
+  padding: 0;
+  padding-top: 20px;
+}
+header .col-5 div .dot,
+header .col-5 div .bell {
+  position: relative;
+}
+header .col-5 div .dot {
+  bottom: 7px;
+  right: 12px;
+  fill: #3434cc;
+}
+main {
+  margin-left: 20px;
+  text-align: left;
+}
+main .top {
+  width: 100%;
+  color: #24292e;
+  margin-top: 70.5px;
+  margin-left: 10px;
+  border-top: 1px solid rgba(213, 206, 206, 0.912);
+  font-size: 14px;
+}
+main .top .tp {
+  position: relative;
+  bottom: 40px;
+}
+main .top h1 {
+  margin-bottom: 0;
+}
+main .top p {
+  margin-top: 0;
+}
+main .top img {
+  border-radius: 50%;
+  width: 80%;
+}
+main .top h1 span {
+  display: block ;
+}
+main .top .p-name {
+  font-size: 26px;
+  line-height: 1.25;
+}
+main .top .p-login {
+  font-size: 20px;
+  font-weight: 300;
+}
+main .count {
+  padding-top: 12px;
+}
+main .count span:not(:first-child) {
+  padding-left: 15px;
+}
+main .count p {
+  display: inline-flex;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+main svg {
+  fill: #6a737d;
+}
+main #em,
+main #loc {
+  padding-left: 5px;
+}
+main a {
+  text-decoration: none;
+  color: inherit;
+}
+.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  padding: 7px;
+  border-radius: 6px;
+  border: 1px solid rgba(117, 136, 150, 0.15);
+  cursor: pointer;
+  background-color: #fafbfc;
+}
+#repositories {
+  color: #595069;
+  font-size: 14px;
+  margin-right: 0;
+}
+#repositories a {
+  text-decoration: none;
+}
+#repositories a:hover {
+  text-decoration: underline;
+}
+#repositories p {
+  padding-bottom: 10px;
+}
+#repositories .HTML {
+  fill: #d83030;
+}
+#repositories .TypeScript {
+  fill: rgba(0, 21, 75, 0.666);
+}
+#repositories .CSS {
+  fill: #510080;
+}
+#repositories .JavaScript {
+  fill: #d6ca22;
+}
+#repositories .undefined {
+  display: none;
+}
+#repositories .btn-svg,
+#repositories .btn-text {
+  padding: 4px;
+  color: #6a737d;
+}
+#repositories svg {
+  fill: #6a737d;
+}
+#menu {
+  border-bottom: 1px solid rgba(213, 206, 206, 0.912);
+}
+#menu .tabs {
+  position: relative;
+  left: 20%;
+  margin-top: 40px;
+}
+#menu .tabs span {
+  padding: 4px;
+}
+#menu a {
+  text-decoration: none;
+  padding: 12px;
+  color: #595069;
+}
+#menu a:hover {
+  border-bottom: 2px solid #d1d5da;
+}
+#menu .repos {
+  border-bottom: 2px solid #ff6f00;
+  font-weight: 500;
+}
+#menu .repos svg {
+  fill: black;
+  font-weight: 800;
+}
+#menu svg {
+  fill: #6a737d;
+}
+.section {
+  font-size: 10%;
+}
+.section input {
+  width: 50%;
+  padding: 7px;
+  border: 1px solid #e4e1e8;
+  color: #e4e1e8;
+  border-radius: 7px;
+}
+.section .big-all {
+  width: 20%;
+}
+.section .all {
+  width: 15%;
+}
+.section .all,
+.section .big-all {
+  display: inline;
+  margin: 7px;
+}
+.section span {
+  padding-right: 10px;
+}
+.section .l-btn,
+.section .m-btn {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(218, 229, 237, 0.15);
+  cursor: pointer;
+  background-color: #fafbfc;
+}
+.section .l-btn {
+  background-color: #2ea44f;
+  color: #fff;
+  padding: 6px 20px ;
+}
+.section .l-btn svg {
+  fill: #fff;
+  font-weight: 900;
+}
+#h-d,
+#h-c,
+#h-b,
+#h-a {
+  display: none;
+}
+.row {
+  border-bottom: 1px solid #e4e1e8;
+  margin: 0;
+}
+#rep-count {
+  background-color: rgba(220, 218, 218, 0.72);
+  border-radius: 40%;
+}
+.circled img {
+  float: left;
+}
+#circled {
+  position: relative;
+  top: 60px;
+  left: 10px;
+  font-weight: bold;
+  display: none;
+}
+a.smile {
+  display: block;
+  position: relative;
+  top: -200px;
+  left: 70%;
+  padding: 5px;
+  background-color: #f3eeee;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px ;
+  border-bottom-left-radius: 45px ;
+  border-bottom-right-radius: 45px;
+  width: max-content;
+}
+a.smile :hover + #smile-input {
+  display: inline;
+  padding: 10px;
+}
+button.m-btn span {
+  font-weight: 900;
+}
+.sm:hover {
+  fill: blue;
+  color: blue;
+}
+#smile-input {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .section input {
+    width: 30%;
+  }
+  #repositories .col-5 {
+    width: 25%;
+  }
+  #repositories .col-4 {
+    width: 70%;
+  }
+  #menu.col-3 .tabs {
+    left: 0;
+    padding: 0px;
+  }
+  #menu.col-3 .tabs a {
+    padding: 5px;
+  }
+}
+@media (max-width: 768px) {
+  #hide2,
+  #hide {
+    display: none;
+  }
+  #toggle {
+    display: block;
+  }
+  header .col-4 {
+    width: 75%;
+  }
+  header .col-5 {
+    width: 25%;
+  }
+  header .col-5 svg {
+    width: 30px;
+    height: 30px;
+  }
+  header .col-5 #first,
+  header .col-5 #second {
+    display: none;
+  }
+  header .col-5 #bell {
+    float: right;
+  }
+  header .form,
+  header .a,
+  header #h-c,
+  header #h-d,
+  header #h-a,
+  header #h-b {
+    display: block;
+    width: 118%;
+    border-bottom: 1px solid gray;
+    margin: 0;
+  }
+  header #h-b {
+    border-bottom: 0 ;
+  }
+  header .a {
+    padding: 10px 3px;
+  }
+  header .Header-link {
+    position: absolute;
+    left: 50%;
+  }
+  .tabs {
+    left: 1%;
+  }
+  main [class*="col-"],
+  main input,
+  main .section input {
+    padding: 10px;
+    display: block;
+    width: 100%;
+  }
+  main .col-5 {
+    width: 15%;
+  }
+  main .col-4 {
+    width: 85%;
+  }
+  main .top {
+    margin-top: 0;
+    border: 0;
+  }
+  main .top .tp {
+    position: static;
+  }
+  main .top img {
+    float: left;
+    width: 15%;
+  }
+  main .top h1 {
+    padding-left: 140px;
+    margin: 0;
+  }
+  main .top p {
+    margin-top: 12px;
+  }
+  .section .l-btn {
+    float: right;
+    margin: 5px;
+  }
+  .location,
+  .hl {
+    display: none;
+  }
+  #repositories .col-4 {
+    width: 75%;
+  }
+  #repositories .col-5 {
+    width: 25%;
+  }
+  #repositories .col-5 button {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .tabs {
+    width: 100%;
+    margin-left: 0;
+  }
+  #menu .tabs {
+    left: 0 ;
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 13px;
+  }
+  a.smile {
+    margin-top: 50px;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: inherit;
+    border: 1px solid rgba(223, 219, 219, 0.953);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px ;
+    border-bottom-left-radius: 4px ;
+    border-bottom-right-radius: 4px;
+  }
+  .sm:hover {
+    fill: blue;
+    color: blue;
+  }
+  #smile-input {
+    display: inline;
+    width: auto;
+    border: 0;
+    font-size: 13px;
+    padding: 5px;
+  }
+}
