@@ -242,7 +242,7 @@ main a {
 }
 #menu a {
   text-decoration: none;
-  padding: 12px;
+  padding: 10px;
   color: #595069;
 }
 #menu a:hover {
@@ -383,10 +383,7 @@ button.m-btn span {
   header .col-5 {
     width: 25%;
   }
-  header .col-5 svg {
-    width: 30px;
-    height: 30px;
-  }
+ 
   header .col-5 #first,
   header .col-5 #second {
     display: none;
@@ -401,7 +398,7 @@ button.m-btn span {
   header #h-a,
   header #h-b {
     display: block;
-    width: 118%;
+    width: 135%;
     border-bottom: 1px solid gray;
     margin: 0;
   }
@@ -434,6 +431,7 @@ button.m-btn span {
   main .top {
     margin-top: 0;
     border: 0;
+    margin-right: 610px;
   }
   main .top .tp {
     position: static;
@@ -457,6 +455,7 @@ button.m-btn span {
   .hl {
     display: none;
   }
+
   #repositories .col-4 {
     width: 75%;
   }
@@ -467,17 +466,19 @@ button.m-btn span {
     font-size: 12px;
     padding: 5px;
   }
-  .tabs {
-    width: 100%;
-    margin-left: 0;
-  }
+  
   #menu .tabs {
-    left: 0 ;
+    
     margin-top: 40px;
-    margin-bottom: 0;
-    font-size: 13px;
+    width: 200%;
+    
   }
-
+.tabs a svg{
+  display: none;
+}
+#menu a{
+  padding-bottom: 10px;
+}
   a.smile {
     margin-top: 50px;
     padding: 5px;
@@ -502,11 +503,13 @@ button.m-btn span {
     font-size: 13px;
     padding: 5px;
   }
+  #profile{
+    padding-right: 35px;
+  }
 }
 @media screen and (max-width:500px){
   #menu a {
-    padding: 2px;
-    font-size:85%;
+    font-size:90%;
   }
   main .top h1{
     padding-left: 100px;
@@ -519,4 +522,11 @@ button.m-btn span {
   display: inline;
   margin: 0;
 }
+header .col-5{
+  width: 25%;
+}
+header .col-4{
+  width: 75%;
+}
+
 }
