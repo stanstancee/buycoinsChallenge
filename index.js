@@ -188,36 +188,39 @@ toggle(b,"hide2","remove2")
 window.addEventListener('scroll', ()=>{
   let circle =  document.querySelector("#circled")
   let menu =  document.querySelector("#menu");
-  let profile =  document.querySelector(".top");
+ // let profile =  document.querySelector(".top");
   let nav =  document.querySelector("nav.tabs");
-  if(window.scrollY >= "100"){
+  if(window.scrollY >= "100"&& window.innerWidth>768){
 
     menu.style.position = "fixed";
     menu.style.top ="-30px";
     menu.style.opacity ="70";
     menu.style.background = "#fff";
     menu.style.width = "100%";
+    nav.style.left = "30%";
+    circle.style.display = "block";
    
   
 }
 
 else{
   menu.style={};
-  
+  circle.style.display = "none";
+  nav.style.left = "0";
 
 }
-  if(window.scrollY >= "200"&& window.innerWidth >760){
-circle.style.display = "block";
-profile.style.position = "static";
-nav.style.left = "30%";
-  }
 
-  else{
-    circle.style.display = "none";
-    profile.style.position = "static";
-    nav.style.left = "0";
-  }
+if(window.innerWidth<=768 && window.scrollY>=400){
+  menu.style.position = "fixed";
+    menu.style.top ="-30px";
+    menu.style.opacity ="70";
+    menu.style.background = "#fff";
+    menu.style.width = "100%";
 
+}
+  
+
+  
 })
 
 
