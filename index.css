@@ -370,6 +370,10 @@ button.m-btn span {
   }
 }
 @media (max-width: 768px) {
+  html,
+body {
+  overflow-x: auto;
+}
   #hide2,
   #hide {
     display: none;
@@ -412,9 +416,7 @@ button.m-btn span {
     position: absolute;
     left: 50%;
   }
-  .tabs {
-    left: 1%;
-  }
+ 
   main [class*="col-"],
   main input,
   main .section input {
@@ -470,14 +472,23 @@ button.m-btn span {
   #menu .tabs {
     
     margin-top: 40px;
-    width: 200%;
-    
+    display: flex;
+    white-space: nowrap;
+    font-size: 14px;
+ 
+  }
+  #menu{
+
+    overflow-x: auto;
+    padding-bottom: 0;
+
   }
 .tabs a svg{
   display: none;
 }
 #menu a{
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+
 }
   a.smile {
     margin-top: 50px;
@@ -508,9 +519,7 @@ button.m-btn span {
   }
 }
 @media screen and (max-width:500px){
-  #menu a {
-    font-size:90%;
-  }
+ 
   main .top h1{
     padding-left: 100px;
   }
